@@ -65,7 +65,7 @@
         desarrollando mis conocimientos para entregar soluciones y un buen servicio a mis clientes.</p>
       <p>Actualmente me estoy preparando para el desarrollo de paginas web, sumando cada dia conocimiento en la parte de Front end 
         con el frameword de Angular y TypeScript, en la de Back end con Node.js y SQL, todo de la mano de profesores, cursos y documentaciones.</p>
-      <a href="../assets/Documentos/CV Simon Alexander Parra Colina (1).pdf" target="_blank"   > Descargar CV</a>
+      <a href="../assets/Documentos/CV Simon Alexander Parra.pdf" target="_blank"   > Descargar CV</a>
   </div>
 </section>
 
@@ -221,14 +221,14 @@
 
       <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
           <div class="fila mitad">
-              <input type="text" placeholder="Nombre Completo" class="input-mitad"  name="nombre" ngModel >
+              <input type="text" required placeholder="Nombre Completo" class="input-mitad"  name="nombre" ngModel >
               <input type="email" placeholder="Dirección de Email" class="input-mitad" name="email" ngModel >
           </div>
           <div class="fila">
-              <input type="text" placeholder="Asuncto" class="input-full"  name="asunto" ngModel>
+              <input type="text" required placeholder="Asuncto" class="input-full"  name="asunto" ngModel>
           </div>
           <div class="fila">
-              <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" name="mensaje" ngModel></textarea>
+              <textarea name="" id="" required="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" name="mensaje" ngModel></textarea>
           </div>
 
           <input type="submit" value="Enviar Mensaje" class="btn-enviar">

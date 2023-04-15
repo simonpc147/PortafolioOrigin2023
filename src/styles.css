@@ -435,6 +435,7 @@ html {
     margin: 0 10px;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 #portfolio .fila .proyecto img {
@@ -648,7 +649,7 @@ footer a {
         display: block;
     }
     #portfolio .fila .proyecto {
-        margin: 10px auto;
+        margin: 25px auto;
     }
     /* seccion CONTACTO */
     #contacto {

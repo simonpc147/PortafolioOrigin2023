@@ -20,7 +20,9 @@ export class AppComponent {
   constructor(public http: MensajeService) { }
 
   contactForm(form: any) {
+    Swal.showLoading.apply("cargando...")
     this.http.sendMessage(form).subscribe(() => {
+    Swal.hideLoading()
     Swal.fire("Formulario de contacto", "Mensaje enviado correctamente", 'success');
     });
     }
