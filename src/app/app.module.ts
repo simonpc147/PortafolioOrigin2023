@@ -10,7 +10,7 @@ import { MensajeService } from './service/mensaje.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
