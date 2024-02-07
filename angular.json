@@ -16,7 +16,7 @@
             "allowedCommonJsDependencies": [
               "lodash"
            ],
-            "outputPath": "dist/proyecto-portafolio",
+            "outputPath": "dist/Proyecto-Portafolio/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Proyecto-Portafolio:build:production"
+              "buildTarget": "Proyecto-Portafolio:build:production"
             },
             "development": {
-              "browserTarget": "Proyecto-Portafolio:build:development"
+              "buildTarget": "Proyecto-Portafolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Proyecto-Portafolio:build"
+            "buildTarget": "Proyecto-Portafolio:build"
           }
         },
         "test": {
@@ -94,6 +94,60 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/Proyecto-Portafolio/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "Proyecto-Portafolio:build:development",
+              "serverTarget": "Proyecto-Portafolio:server:development"
+            },
+            "production": {
+              "browserTarget": "Proyecto-Portafolio:build:production",
+              "serverTarget": "Proyecto-Portafolio:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "Proyecto-Portafolio:build:production",
+              "serverTarget": "Proyecto-Portafolio:server:production"
+            },
+            "development": {
+              "browserTarget": "Proyecto-Portafolio:build:development",
+              "serverTarget": "Proyecto-Portafolio:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

@@ -9,6 +9,6 @@ export class MensajeService {
   constructor(private http: HttpClient) { }
 
   sendMessage(body: any) {
-    return this.http.post('https://enviocorreo.onrender.com/formulario', body);
+     return this.http.post('https://enviocorreo.onrender.com/formulario', body);
     }
 }

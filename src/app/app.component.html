@@ -1,408 +1,76 @@
+<div [class.darking]="darkModeEnabled">
 
-
-
-
-<section id="inicio">
-
+  <header id="entrada">
     <div class="contenido">
-  
-        <header>
-            <div class="contenido-header">
-                <h1>S/P</h1>
-  
-                <nav id="nav" class="" [ngClass]="{'responsive': active}">
-                    <ul id="links">
-                        <li><a href="#inicio" onclick="seleccionar(this)">INICIO</a></li>
-                        <li><a href="#sobremi"onclick="seleccionar(this)">SOBRE MI</a></li>
-                        <li><a href="#servicios"onclick="seleccionar(this)">SERVICIOS</a></li>
-                        <li><a href="#habilidades"onclick="seleccionar(this)">HABILIDADES </a></li>
-                        <li><a href="#portfolio"onclick="seleccionar(this)">PORTFOLIO</a></li>
-                        <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
-                    </ul>
-                </nav>
-  
-               
-                <div id="icono-nav" (click)="responsiveMenu()">
-                    <i class="fa-solid fa-bars" ></i>
-                </div>
-  
-  
-                <div class="redes">
-                    <a href="https://www.linkedin.com/in/saimon-programation-10a732263/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/simon.parracolina/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://instagram.com/simonpxr?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
-                    <a href="https://github.com/simonpc147/PortafolioOrigin2023/tree/main/src/app" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-        </header>
-  
-  
-  
-  <!-- ---------------------------------------------------------
-                  P R I M E R A   S E C C I O N  
-  ---------------------------------------------------------- -->
-  
-        <div class="presentacion">
-            <p class="bienvenida">Bienvenidos</p>
-            <h2>Soy <span>Simon Parra</span></h2>
-            <h2>Desarrollador Web</h2>
-            <p class="descripcion">"La confianza en sí mismo es el primer secreto del éxito" </p>
-            <a href="#portfolio">Ir a Portafolio</a>
-        </div>
-    </div>
-  </section>
-  
-  <!-- SECCION S O B R E M I -->
-  <section id="sobremi">
-    <div class="contenedor-foto">
-        <img src="assets/img/[removal.ai]_78df8ea9-18bf-4cf8-8aee-f318c6e77b74.png"   height="405px" style="border-radius: 10px;" class="contenedor-imagen">
-    </div>
-    <div class="sobremi">
-        <p class="titulo-seccion">Sobre Mi</p>
-        <h2>Hola, soy <span>Simon Parra </span> </h2>
-        <h3>Desarrollador Web</h3>
-        <p>Soy un joven apasionado por la <span>programacion y la excelencia</span>, soy <span>autodidacta</span> me gusta siempre estar aprendiendo
-          desarrollando mis conocimientos para <span>entregar soluciones y un buen servicio a mis clientes</span>.</p>
-        <p>Actualmente me estoy preparando para el <span>desarrollo y administración de paginas web</span>, sumando cada dia conocimiento en la parte de Front end 
-          con el frameword de Angular y TypeScript, en la de Back end con Node.js y SQL, todo de la mano de profesores, cursos y documentaciones <span>.</span></p>
-        <a href="../assets/Documentos/CV Front-end Developer 2023.pdf" target="_blank"   > Descargar CV</a>
-    </div>
-  </section>
-  
-  <!-- SECCION S E R V I C I O S -->
-  <section id="servicios">
-    <h3 class="titulo-seccion">MIS SERVICIOS</h3>
-    <div class="fila">
-      <div class="servicio" > 
-            <!-- <span class="icono"> <i class="fa-solid fa-code "></i></span>  -->
-            <img src="assets/Icon/programador.png" alt="">
-            <h4>Desarrolo Web</h4>
-            <hr>
-            <ul class="servicios-tag">
-              <li>Paginas</li>
-              <li>Sitios Web</li>
-              <li>Sistemas</li>
-            </ul>
-            <p>Me encargare de desarrollar tu sitio web profesional y receptivo, que sera funcional y atractivo, 
-              haciendo uso de conocimientos de UI / UX creando un producto eficiente y visualmente agradable 
-              para el usuario final.</p>
-              <button>
-                <a href="#contacto">
-                  Estoy interesado
-                </a>
-              </button>
-        </div>
-        <div class="servicio">
-            <!-- <span class="icono"><i class="fa-brands fa-uncharted "></i></span>  -->
-            <img src="assets/Icon/api.png" alt="">
-            <h4>Administracion y Mantenimiento</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>Data Base</li>
-                <li>SQL</li>
-                <li>Software</li>
-            </ul>
-            <p>Tendre la responsabilidad de almacenar, actualizar, editar y eliminar datos
-               de un sitio web en base a mis conocimientos en Node.js, MySQL, PHP y WordPress.</p>
-               <button>
-                <a href="#contacto">
-                  Estoy interesado
-                </a>
-              </button>
-        </div>
-        <div class="servicio">
-            <!-- <span class="icono"><i class="fa-solid fa-wrench "></i></span>   -->
-            <img src="assets/Icon/panel.png" alt="">
-            <h4>Posicionamiento SEO</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>Estilo </li>
-                <li>Funciones</li>
-                <li>Trafico</li>
-            </ul>
-            <p>Mi labor sera de mantener tu sitio web acitualizo, funcional y atractivo para tu publico,
-              con el objetivo de posicionar de garanztizar la visibilidad de tu marca u empresa
-              a potenciales clientes.
-            </p>
-            <button>
-              <a href="#contacto">
-                Estoy interesado
-              </a>
-            </button>
-        </div>
-    </div>
-    
-  </section>
-  
-  <!-- SECCION H A B I L I D A D E S -->
-  
-  <section id="habilidades">
-  
-      <div class="contenedor-skills" id="skills">
-          <h2 class="titulo-seccion2">HABILIDADES</h2>
-  
-        <div class="container-carrousel">
+      <div class="contenido-header">
 
-          <div class="principal-arrows ">
-            <ul class="puntos">
-              <a class="arrows2" (click)="arrowsOne()" href="#habilidades">
-                <p style="font-family: monospace;"><</p>
-              </a>              
-            </ul>
-          </div>
-          
-          <div class="carrousel">
-            <div class="grande posicion-one">
-              <div class="img-1">
-                <h3 class="title-seccion">ESTRUCTURA, DISEÑO Y LIBRERIAS</h3>
-                <div class="content-img">
-                  <img src="assets/Img-Pg/HTML5_logo_and_wordmark.svg.png" alt="Imagen 1" class="img2">
-                  <img src="assets/Img-Pg/css3-logo-png-transparent.png" alt="Imagen 2" class="img2">
-                  <img src="assets/Img-Pg/WordPress_blue_logo.svg.png" alt="Imagen 2" class="img2">
-                  <img src="assets/Img-Pg/figma2.png" alt="Imagen 2" class="img2">
-                  <img src="assets/Img-Pg/Bootstrap_logo.svg.png" alt="Imagen 2" height="125px" class="img2">
-                  <img src="assets/Img-Pg/primeng-logo.png" alt="Imagen 2" class="img2">
-                  <img src="assets/Img-Pg/elementor.png" alt="Imagen 2" style="width:3cm;" class="img2">
-                </div>
-              </div>
-              <div class="img-2">
-                <h3 class="title-seccion">LENGUAJES DE PROGRAMACIÓN Y FRAMEWORS</h3> <!-- AGREGAR ICONOS DE BOOSTRAP O FONTAWESONE Y NO IMAGENES  -->
-                <div class="content-img2">
-                  <img src="assets/Img-Pg/2048px-Angular_full_color_logo.svg.png" alt="Imagen 1"  class="img">
-                  <img src="assets/Img-Pg/JavaScript-Logo3-removebg-preview.png" alt="Imagen 1"  class="img">
-                  <img src="assets/Img-Pg/Typescript_logo_2020.svg.png" alt="Imagen 2" class="img">
-                  <img src="assets/Img-Pg/PHP-logo.svg.png" alt="Imagen 2" style="height: 3.3cm;width: 4cm;" class="img">
-                </div> 
-              </div>
-              <div class="img-3">
-                <h3 class="title-seccion">BACKEND Y BASE DE DATOS</h3>
-                <div class="content-img2">
-                  <img src="assets/Img-Pg/nodejs-removebg-preview.png" alt="Imagen 1" class="img">
-                  <img src="assets/Img-Pg/png-clipart-mysql-workbench-database-mysql-cluster-others-text-logo-removebg-preview.png" alt="Imagen 2"  style="width:5cm;" class="img">
-                  <img src="assets/Img-Pg/npm-logo-AC981C1409-seeklogo.com.png" alt="Imagen 1"  style="width:5cm;" class="img">
-                </div> 
-              </div>
-            </div>
-          </div>
-      
-          <div class="principal-arrows">
-            <ul class="puntos">
-              <a class="arrows" (click)="arrowsTwo()" href="#habilidades">
-                <p style="font-family: monospace;">></p>
-              </a>
-            </ul>
-          </div>
-      </div>  
-    </div>
-        
-  </section>
-  
-  <!-- SECCION PORTAFOLIO -->
-  
-  <section id="portfolio">
-    <h3 class="titulo-seccion">Mis Proyectos</h3>
-    <div class="fila">
+        <img src="assets/img/logo.png" height="50px" width="160px" alt="">
 
-        <div class="proyecto">
-            <div class="overlay"></div>
-            <img src="assets/img/ProyectoCrypto.jpeg"  alt="">
-            <div class="descripcion">
-              <h3>Proyecto Criptomonedas</h3>
-              <div class="contenedor-items">
-                <i class="fa-brands fa-html5"> HTML</i>
-                <i class="fa-brands fa-css3-alt"> CSS</i>
-                <i class="fa-brands fa-square-js"> JS</i>
-                <i class="fa-brands fa-angular"> Angular</i>
-              </div>
-            </div>
-            <div class="botones-items">
-              <button class="boton-code"> 
-                <a href="https://github.com/simonpc147/ProyectoCrypto.01" target="_blank"> 
-                  <span>
-                    Codigo del proyecto
-                  </span>
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </button>
-              <button class="boton-view">
-                <a href="https://cryptocoin-52af4.web.app" target="_blank">VER PAGINA</a> 
-              </button>
-            </div>
+        <nav id="nav" class="" (click)="menu()" [ngClass]="{'responsive': active}">
+          <a class="border active" (click)="scrollToDistance(0)" routerLink="/home">Inicio</a>
+          <a (click)="scrollTo('habilidades')" class="border title-habilidades">Habilidades </a>
+          <a (click)="scrollTo('servicios')" class="border">Servicios</a>
+          <a (click)="scrollTo('portfolio')" class="border">Portafolio</a>
+          <a routerLink="/blog" (click)="scrollToDistance(0)" class="border">Blog</a>
+          <a (click)="scrollTo('contacto')" class="border">Contacto</a>
+        </nav>
+
+        <div id="icono-nav" (click)="responsiveMenu()">
+          <i id="open" class="fa-solid fa-bars active"></i>
+          <i id="close" class="fa-solid fa-xmark"></i>
         </div>
 
-        <div class="proyecto">
-          <div class="overlay"></div>
-          <img src="assets/img/ProyectoPaises.jpeg"  alt="">
-          <div class="descripcion">
-            <h3>Proyecto Paises</h3>
-            <div class="contenedor-items">
-              <i class="fa-brands fa-html5"> HTML</i>
-              <i class="fa-brands fa-css3-alt"> CSS</i>
-              <i class="fa-brands fa-square-js"> JS</i>
-              <i class="fa-brands fa-angular"> Angular</i>
-            </div>
-          </div>
-          <div class="botones-items">
-            <button class="boton-code"> 
-              <a href="https://github.com/simonpc147/ProyectoPaises" target="_blank"> 
-                <span>
-                  Codigo del proyecto
-                </span>
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </button>
-            <button class="boton-view">
-              <a href="https://paises-da984.web.app/pais" target="_blank">VER PAGINA</a> 
-            </button>
-          </div>
+        <div class="redes">
+          <a href="https://www.linkedin.com/in/saimon-programation-10a732263/" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/simonpc147" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
 
-        <div class="proyecto">
-          <div class="overlay"></div>
-          <img src="assets/img/img-dashboard.png"  alt="">
-          <div class="descripcion">
-            <h3>Trabajo Dashboard</h3>
-            <div class="contenedor-items">
-              <i class="fa-brands fa-html5"> HTML</i>
-              <i class="fa-brands fa-css3-alt"> CSS</i>
-              <i class="fa-brands fa-square-js"> JS</i>
-              <i class="fa-brands fa-php"> PHP</i>
-              <i class="fa-solid fa-database"> MySQL</i>
-            </div>
-          </div>
-          <div class="botones-items">
-            <button class="boton-code"> 
-              <a href="https://github.com/simonpc147/dashboard" target="_blank"> 
-                <span>
-                  Codigo del proyecto
-                </span>
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </button>
-            <button class="boton-view"> 
-              <a href="http://whatsapp.technojet.com.mx/index.php" target="_blank">VER PAGINA</a> 
-            </button>
-          </div>
+        <div class="separate"></div>
+
+        <div class="mode-light" (click)="toggleDarkMode()">
+          <img src="assets/Img-Pg/sol (1).png" class="light active" height="35px" width="35px" alt="">
+          <img src="assets/Img-Pg/creciente (1).png" class="dark" height="35px" width="35px" alt="">
         </div>
-    </div>
 
-    <div class="fila" style="padding-top: 20px;">
-
-      <div class="proyecto">
-          <div class="overlay"></div>
-          <img src="assets/img/img-urbanwoeking.png"  alt="">
-          <div class="descripcion">
-            <h3>Desarrollo de Sitio Web</h3>
-            <div class="contenedor-items">
-              <i class="fa-brands fa-wordpress"> WP</i>
-              <i class="fa-brands fa-diaspora"> Divi</i>
-              <i class="fa-brands fa-whatsapp">whatsapp</i>
-            </div>
-          </div>
-          <div class="botones-items">
-            <!-- <button class="boton-code"> 
-              <a href="https://github.com/simonpc147/ProyectoCrypto.01" target="_blank"> 
-                <span>
-                  Codigo del proyecto
-                </span>
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </button> -->
-            <button class="boton-view">
-              <a href="https://urbanworking.thunderbirdhotels.com/" target="_blank">VER PAGINA</a> 
-            </button>
-          </div>
       </div>
+    </div>
+  </header>
 
-      
-      <div class="proyecto">
-        <div class="overlay"></div>
-        <img src="assets/img/img-proyectoSonhos.png"  alt="">
-        <div class="descripcion">
-          <h3>Desarrollo de Sitio Web</h3>
-          <div class="contenedor-items">
-            <i class="fa-brands fa-wordpress"> WordPress</i>
-            <i class="fa-brands fa-diaspora"> Divi</i>
+  <router-outlet></router-outlet>
+
+  <footer>
+    <div>
+      <div class="footer-links">
+        <img src="assets/img/logo.png" height="100px" width="300px" alt="">
+        <div class="footer-links-one">
+          <div class="seccion-p">
+            <a routerLink="/diseño-web" (click)="scrollToDistance(0)">Tu Diseñador web</a>
+          <div>
+            <a routerLink="/tiendas-online" (click)="scrollToDistance(0)">Tiendas online </a><span> / E-Ecommerce</span>
+          </div>
+          <a routerLink="/posicionamiento-en-buscadores" (click)="scrollToDistance(0)">Posicionamiento en buscadores</a>
+          </div>
+          <div class="seccion-p">
+            <a routerLink="/blog" (click)="scrollToDistance(0)">Blog</a>
+            <a routerLink="/portafolio" (click)="scrollToDistance(0)">Portafolio</a>
+            <a routerLink="/contacto" (click)="scrollToDistance(0)">Contacto</a>
           </div>
         </div>
-        <div class="botones-items">
-          <!-- <button class="boton-code"> 
-            <a href="https://github.com/simonpc147/ProyectoCrypto.01" target="_blank"> 
-              <span>
-                Codigo del proyecto
-              </span>
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </button> -->
-          <button class="boton-view">
-            <a href="https://proyecto-sonhos.com/" target="_blank">VER PAGINA</a> 
-          </button>
+
+      </div>
+      <hr>
+      <div class="footer-links-two">
+        <p>Simon Parra <span> </span><a href="https://simonparra.com/" class="link"> Diseñador web freelance</a></p>
+        <div class="footer-links-two-one">
+          <a routerLink="/aviso-legal" (click)="scrollToDistance(0)" rel="nofollow">Aviso legal</a>
+          <a routerLink="/politicas" (click)="scrollToDistance(0)" rel="nofollow">Política de privacidad</a>
+          <a routerLink="/politicas-cookies" (click)="scrollToDistance(0)" rel="nofollow">Política de Cookies</a>
+          <a href="/" title="Lista de paginas del sitio" rel="nofollow">Mapa Web</a>
         </div>
       </div>
 
-      <div class="proyecto">
-        <div class="overlay"></div>
-        <img src="assets/img/img-inversionesCaxias.png"  alt="">
-        <div class="descripcion">
-          <h3>Desarrollo de Sitio Web</h3>
-          <div class="contenedor-items">
-            <i class="fa-brands fa-wordpress"> WP</i>
-            <i class="fa-brands fa-elementor"> Elementor</i>
-            <i class="fa-brands fa-whatsapp">whatsapp</i>
-          </div>
-        </div>
-        <div class="botones-items">
-          <!-- <button class="boton-code"> 
-            <a href="https://github.com/simonpc147/ProyectoCrypto.01" target="_blank"> 
-              <span>
-                Codigo del proyecto
-              </span>
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </button> -->
-          <button class="boton-view">
-            <a href="https://inversionescaxias.com/" target="_blank">VER PAGINA</a> 
-          </button>
-        </div>
-      </div>
     </div>
-    
-  </section>
-  
-  <!-- SECCTION C O N T A C T O -->
-  <section id="contacto">
-    <h3 class="titulo-seccion">Contáctame</h3>
-    <div class="contenedor-form">
-  
-        <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
-            <div class="fila mitad">
-                <input type="text" required placeholder="Nombre Completo" class="input-mitad"  name="nombre" ngModel >
-                <input type="email" placeholder="Dirección de Email" class="input-mitad" name="email" ngModel >
-            </div>
-            <div class="fila">
-                <input type="text" required placeholder="Asuncto" class="input-full"  name="asunto" ngModel>
-            </div>
-            <div class="fila">
-                <textarea name="" id="" required="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full2" name="mensaje" ngModel></textarea>
-            </div>
-  
-            <input type="submit" value="Enviar Mensaje" class="btn-enviar">
-        </form>
-  
-        
-  
-    </div>
-  </section>
+  </footer>
 
-<!-- SECCION FOOTER -->
-<footer>
-    <p>Simon Parra</p>
-  <p>Todos los derechos reservados - 2023</p>
- 
-    <div class="redes">
-        <a href="https://www.linkedin.com/in/saimon-programation-10a732263/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/simon.parracolina/"  target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://instagram.com/simonpxr?igshid=ZDdkNTZiNTM="  target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
-    </div>
-
-</footer>
+</div>

@@ -1,0 +1,33 @@
+<section id="contacto">
+    <br>
+    <h3 class="titulo-seccion">Contáctame</h3>
+    <div class="contenedor-form">
+  
+      <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
+        <div class="fila mitad">
+          <input type="text" required placeholder="Nombre" class="input-mitad" name="nombre" ngModel>
+          <input type="email" placeholder="Correo electronico" class="input-mitad" name="email" ngModel>
+        </div>
+        <div class="fila">
+          <input type="text" required placeholder="Asunto" class="input-full" name="asunto" ngModel>
+        </div>
+        <div class="fila">
+          <textarea name="" id="" required="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full2"
+            name="mensaje" ngModel></textarea>
+        </div>
+  
+        <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+      </form>
+  
+      <div class="">
+        <img src="assets/img/designer-9.svg" alt="">
+        <div class="redes">
+          <a href="https://www.linkedin.com/in/saimon-programation-10a732263/" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/simon.parracolina/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://instagram.com/simonpxr?igshid=ZDdkNTZiNTM=" target="_blank"><i
+              class="fa-brands fa-instagram-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,348 @@
+<!-- ---------------------------------------------------------
+                  P R I M E R A   S E C C I O N  
+  ---------------------------------------------------------- -->
+<section id="inicio">
+    <div class="contenido">
+        <div class="presentacion">
+            <p class="bienvenida">Bienvenidos</p>
+            <h2> <span>Simon Parra</span></h2>
+            <div class="contenedor-maquina">
+                <h1 id="titulo-inicio">Diseñador Web.</h1>
+            </div>
+            <p class="descripcion">"La confianza en sí mismo es el primer secreto del éxito" </p>
+            <a (click)="scrollTo('portfolio')">Ir a Portafolio</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION S O B R E M I -->
+<section id="sobremi">
+    <div class="contenedor-foto">
+        <img src="assets/img/Simon123.png" height="405px" style="border-radius: 10px;" alt="Simon Parra"
+            class="contenedor-imagen">
+    </div>
+    <div class="sobremi">
+        <h2>¿Quien es<span>Simon Parra </span>?</h2>
+        <h3>Programador y Diseñador Web</h3>
+        <p>Soy un joven apasionado por la <span>programacion y la excelencia</span>, soy <span>autodidacta</span> me
+            gusta
+            siempre estar aprendiendo, desarrollando mis conocimientos para <span>entregar soluciones y un buen servicio
+                a mis clientes</span>.</p>
+        <p>Actualmente me especializo como <span>diseñador web, asi como la administración y posicionamiento de páginas
+                web (SEO).</span> Cada día sumo nuevos conocimientos
+            para mejorar mis habilidades y ofrecer un servicio de excelencia. Estoy comprometido en brindar soluciones
+            efectivas para satisfacer las necesidades y objetivos de mis clientes.</p>
+        <a (click)="openDocumentInNewTab()"> Visualizar CV</a>
+    </div>
+</section>
+
+
+<!-- SECCION H A B I L I D A D E S -->
+
+<section id="habilidades">
+
+    <div class="contenedor-skills" id="skills">
+        <h2 class="titulo-seccion2">HABILIDADES</h2>
+
+        <div class="contenedor-skills_container">
+            <div class="carrousel">
+                <div class="grande posicion-one">
+                    <div class="img-1">
+                        <h3 class="title-seccion">ESTRUCTURACION Y DISEÑO</h3>
+                        <div class="content-img">
+                            <img src="assets/Img-Pg/HTML5.png" id="HTML" alt="Imagen 1" class="img2">
+                            <img src="assets/Img-Pg/CSS3.png" id="CSS" alt="Imagen 2" class="img2">
+                            <img src="assets/Img-Pg/WordPress.png" id="WP" alt="Imagen 2" class="img2">
+                            <img src="assets/Img-Pg/figma2.png" id="FG" alt="Imagen 2" class="img2">
+                            <img src="assets/Img-Pg/Bootstrap.png" id="BT" alt="Imagen 2" class="img2">
+                            <img src="assets/Img-Pg/primeng.png" id="PG" alt="Imagen 2" class="img2">
+                            <img src="assets/Img-Pg/elementor.png" id="ELM" alt="Imagen 2" class="img2">
+                            <img src="assets/Img-Pg/tailwind.png" alt="Imagen 2" class="img2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carrousel">
+                <div class="grande posicion-one">
+                    <div class="img-2">
+                        <h3 class="title-seccion">LENGUAJES Y FRAMEWORS</h3>
+                        <!-- AGREGAR ICONOS DE BOOSTRAP O FONTAWESONE Y NO IMAGENES  -->
+                        <div class="content-img2">
+                            <img src="assets/Img-Pg/JavaScript.png" id="JS" alt="Imagen 1" class="img3">
+                            <img src="assets/Img-Pg/Typescript.png" id="TP" alt="Imagen 2" class="img3">
+                            <img src="assets/Img-Pg/PHP.png" id="PHP" alt="Imagen 2" class="img3">
+                            <img src="assets/Img-Pg/Angular.png" id="AG" alt="Imagen 1" class="img3">
+                            <img src="assets/Img-Pg/React.png" id="RC" alt="Imagen 1" class="img3">
+                            <img src="assets/Img-Pg/Svelte_Logo.png" id="SV" alt="Imagen 1" class="img3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carrousel">
+                <div class="grande posicion-one">
+                    <div class="img-3">
+                        <h3 class="title-seccion">TECNOLOGIAS Y HERRAMIENTAS</h3>
+                        <div class="content-img2">
+                            <img src="assets/Img-Pg/nodejs.png" alt="Imagen 1" class="img2">
+                            <img src="assets/Img-Pg/expressjs.png" alt="Imagen 1" class="img2">
+                            <img src="assets/Img-Pg/postman.png" alt="Imagen 1" class="img2">
+                            <img src="assets/Img-Pg/npm.png" alt="Imagen 1" class="img2">
+                            <img src="assets/Img-Pg/MySQL.png" alt="Imagen 2" class="img2">
+                            <img src="assets/Img-Pg/mongodb.png" alt="Imagen 1" class="img2">
+                            <img src="assets/Img-Pg/POSTGRESQL.png" alt="Imagen 1" class="img2">
+                            <img src="assets/Img-Pg/GIT.png" alt="Imagen 1" class="img2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION S E R V I C I O S -->
+<section id="servicios">
+    <h3 class="titulo-seccion">SERVICIOS</h3>
+
+    <!-- #PRIMER SERVICIOS -->
+    <section class="servicios_sobremi">
+        <div class="sobremi_servicios">
+            <a (click)="scroll('contacto')">Diseñador Web</a>
+            <div class="contenedor-servicios">
+                <img src="assets/img/comprobado.png" height="30px" width="30px" alt="">
+                <h4>Hosting y Dominio</h4>
+            </div>
+            <p>- Dominio de Regalo (1 año)</p>
+            <p>- Hosting WordPress de Regalo (1 mes)</p>
+            <p>- Configuracion DNS y certificado SSL</p>
+
+            <br>
+
+            <div class="contenedor-servicios">
+                <img src="assets/img/comprobado.png" height="30px" width="30px" alt="">
+                <h4>Desarrollo web personalizado</h4>
+            </div>
+            <p>- 4 Páginas (Inicio, Productos, Contacto, etc)</p>
+            <p>- Diseño Web Profesional (UX)</p>
+            <p>- Diseño responsive.</p>
+            <p>- Administración de contenido</p>
+
+            <br>
+
+            <div class="contenedor-servicios">
+                <img src="assets/img/comprobado.png" height="30px" width="30px" alt="">
+                <h4>Mantenimiento Web</h4>
+            </div>
+            <p>- Optimizacion de contenido</p>
+            <p>- Asesoramiento las 24/7</p>
+            <p>- Actualizacion y copia de Seguridad</p>
+        </div>
+        <div class="tamaño-img">
+            <img src="assets/img/mockup_domain.webp" alt="">
+        </div>
+    </section>
+
+    <!-- #SEGUNDO SERVICIOS -->
+    <section class="servicios_sobremi reverse-imagen ">
+        <div class="tamaño-img">
+            <img src="assets/img/posicionamiento-en-buscadores.png" alt="">
+        </div>
+        <div class="sobremi_servicios">
+            <a (click)="scroll('contacto')">Posicionamiento SEO</a>
+            <div class="contenedor-servicios">
+                <img src="assets/img/comprobado.png" height="30px" width="30px" alt="">
+                <h4>Optimizacion web</h4>
+            </div>
+            <p>- Tráfico de búsqueda</p>
+            <p>- Investigación de palabras clave</p>
+            <p>- Evaluación de la competencia</p>
+
+            <br>
+
+            <div class="contenedor-servicios">
+                <img src="assets/img/comprobado.png" height="30px" width="30px" alt="">
+                <h4>SEO On Page</h4>
+            </div>
+            <p>- Títulos y descripciones </p>
+            <p>- Optimización de CRO.</p>
+            <p>- Plugins o funcionalidades especiales.</p>
+
+            <br>
+
+            <div class="contenedor-servicios">
+                <img src="assets/img/comprobado.png" height="30px" width="30px" alt="">
+                <h4>Mantenimiento SEO y linkbuilding</h4>
+            </div>
+            <p>- Modificaciones en páginas y artículos.</p>
+            <p>- Revisión y ajustes correspondientes al CRO.</p>
+            <p>- Monitoreo y seguiemiento de la web</p>
+        </div>
+    </section>
+
+    <!-- #TERCER SERVICIOS -->
+    <section class="servicios_sobremi">
+        <div class="sobremi_servicios">
+            <a (click)="scroll('contacto')">Creación de Sistemas</a>
+            <div class="contenedor-servicios">
+                <img src="assets/img/comprobado.png" height="30px" width="30px" alt="">
+                <h4>Programación a medida</h4>
+            </div>
+            <p>- Automatización de procesos</p>
+            <p>- Desarrollo de sistema acorde a tu necesidad</p>
+            <p>- Integración de sistemas y desarrollo de API</p>
+
+            <br>
+
+            <div class="contenedor-servicios">
+                <img src="assets/img/comprobado.png" height="30px" width="30px" alt="">
+                <h4>Servicios cloud</h4>
+            </div>
+            <p>- Diseño de bases de datos</p>
+            <p>- Confuguracion de base de datos</p>
+            <p>- Administración de bases de datos</p>
+
+            <br>
+
+            <div class="contenedor-servicios">
+                <img src="assets/img/comprobado.png" height="30px" width="30px" alt="">
+                <h4>Mantenimiento y asesoramiento</h4>
+            </div>
+            <p>- Optimizacion y modificacion de sistemas</p>
+            <p>- Asesoramiento constante</p>
+            <p>- Acompañamiento y supervisión</p>
+        </div>
+        <div class="tamaño-img">
+            <img src="assets/img/system.png" width="600px" height="550px" alt="">
+        </div>
+    </section>
+</section>
+
+<!-- SECCION PORTAFOLIO -->
+
+<section id="portfolio">
+    <h3 class="titulo-seccion">PROYECTOS DE SIMÓN PARRA</h3>
+    <div class="mi-seccion">
+        <div class="contender-p movimientoOne">
+            <div class="contenedor-portfolio">
+                <div class="contenedor-img">
+                    <img src="assets/img/Inversiones-Caxias (1).jpg" alt="">
+                </div>
+                <h2>Pagina Web Inversiones Caxias</h2>
+                <p>Desarrollo de página web para la empresa de venta de maquinaria de contrucion.</p>
+                <div class="contenedor-buttons">
+                    <a class="button" href="https://inversionescaxias.com/" target="_blank">VER PAGINA
+                    </a>
+                </div>
+            </div>
+
+            <div class="contenedor-portfolio">
+                <div class="contenedor-img">
+                    <img src="assets/img/Sonhos-Departamentos.jpg" alt="">
+                </div>
+                <h2>Pagina Web Proyecto Sonhos</h2>
+                <p>Desarrollo de página web para la empresa de Proyecto Sonhos.</p>
+                <div class="contenedor-buttons">
+                    <a class="button" href="https://proyecto-sonhos.com/" target="_blank">VER PAGINA
+                    </a>
+                </div>
+            </div>
+
+            <div class="contenedor-portfolio">
+                <div class="contenedor-img">
+                    <img src="assets/img/Urban-Working.png" alt="">
+                </div>
+                <h2>Pagina Web Urban Working</h2>
+                <p>Desarrollo de página web para la empresa de Urban Working Benavides.</p>
+                <div class="contenedor-buttons">
+                    <a class="button" href="https://urbanworking.thunderbirdhotels.com/" target="_blank">VER PAGINA
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contender-p movimientoTwo">
+            <div class="contenedor-portfolio">
+                <div class="contenedor-img">
+                    <img src="assets/img/webdeveloper.png" alt="">
+                </div>
+                <h2>Pagina Web Informativa</h2>
+                <p>Desarrollo de página web informativa relacionada a la Programación.</p>
+                <div class="contenedor-buttons">
+                    <a class="button" href="https://futurewebdeveloper.com/" target="_blank">VER PAGINA
+                    </a>
+                </div>
+            </div>
+
+            <div class="contenedor-portfolio">
+                <div class="contenedor-img">
+                    <img src="assets/img/ProyectCrypto.jpg" alt="">
+                </div>
+                <h2>Pagina Web Criptomonedas</h2>
+                <p>Desarrollo de página web relacionada a la cotizacion de la criptomonedas </p>
+                <div class="contenedor-buttons-two">
+                    <a href="https://github.com/simonpc147/ProyectoCrypto.01" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="button" href="https://cryptocoin-52af4.web.app/cryptomoneda" target="_blank">VER PAGINA
+                    </a>
+                </div>
+            </div>
+
+            <div class="contenedor-portfolio">
+                <div class="contenedor-img">
+                    <img src="assets/img/Paises.png" alt="">
+                </div>
+                <h2>Pagina Web de Paises</h2>
+                <p>Desarrollo de página web informativa relacionada Continentes, paises y capitales</p>
+                <div class="contenedor-buttons-two">
+                    <a href="https://github.com/simonpc147/ProyectoPaises" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="button" href="https://paises-da984.web.app/region" target="_blank">VER PAGINA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a routerLink="/portafolio" class="button-mas" (click)="scrollToDistance(0)">Ver mas
+        <i class="fa-solid fa-arrow-right center-one"></i>
+    </a>
+</section>
+
+<!-- SECCTION C O N T A C T O -->
+<section id="contacto">
+    <h3 class="titulo-seccion">Contáctame</h3>
+    <div class="contenedor-form">
+        <div class="form">
+
+            <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
+                <div class="fila mitad">
+                    <input type="text" required placeholder="Nombre" class="input-mitad" name="nombre" ngModel>
+                    <input type="email" placeholder="Correo electronico" class="input-mitad" name="email" ngModel>
+                </div>
+                <div class="fila">
+                    <input type="text" required placeholder="Asunto" class="input-full" name="asunto" ngModel>
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" required="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full2" name="mensaje" ngModel></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+
+        <div class="form-image">
+            <img src="assets/img/designer-9.svg" alt="">
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/saimon-programation-10a732263/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/simon.parracolina/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/simonpxr?igshid=ZDdkNTZiNTM=" target="_blank"><i
+                        class="fa-brands fa-instagram-square"></i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
