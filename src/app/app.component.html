@@ -1,0 +1,76 @@
+<div [class.darking]="darkModeEnabled">
+
+  <header id="entrada">
+    <div class="contenido">
+      <div class="contenido-header">
+
+        <img src="assets/img/logo.png" height="50px" width="160px" alt="">
+
+        <nav id="nav" class="" (click)="menu()" [ngClass]="{'responsive': active}">
+          <a class="border active" (click)="scrollToDistance(0)" routerLink="/home">Inicio</a>
+          <a (click)="scrollTo('habilidades')" class="border title-habilidades">Habilidades </a>
+          <a (click)="scrollTo('servicios')" class="border">Servicios</a>
+          <a (click)="scrollTo('portfolio')" class="border">Portafolio</a>
+          <a routerLink="/blog" (click)="scrollToDistance(0)" class="border">Blog</a>
+          <a (click)="scrollTo('contacto')" class="border">Contacto</a>
+        </nav>
+
+        <div id="icono-nav" (click)="responsiveMenu()">
+          <i id="open" class="fa-solid fa-bars active"></i>
+          <i id="close" class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="redes">
+          <a href="https://www.linkedin.com/in/saimon-programation-10a732263/" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/simonpc147" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <div class="separate"></div>
+
+        <div class="mode-light" (click)="toggleDarkMode()">
+          <img src="assets/Img-Pg/sol (1).png" class="light active" height="35px" width="35px" alt="">
+          <img src="assets/Img-Pg/creciente (1).png" class="dark" height="35px" width="35px" alt="">
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <router-outlet></router-outlet>
+
+  <footer>
+    <div>
+      <div class="footer-links">
+        <img src="assets/img/logo.png" height="100px" width="300px" alt="">
+        <div class="footer-links-one">
+          <div class="seccion-p">
+            <a routerLink="/diseño-web" (click)="scrollToDistance(0)">Tu Diseñador web</a>
+          <div>
+            <a routerLink="/tiendas-online" (click)="scrollToDistance(0)">Tiendas online </a><span> / E-Ecommerce</span>
+          </div>
+          <a routerLink="/posicionamiento-en-buscadores" (click)="scrollToDistance(0)">Posicionamiento en buscadores</a>
+          </div>
+          <div class="seccion-p">
+            <a routerLink="/blog" (click)="scrollToDistance(0)">Blog</a>
+            <a routerLink="/portafolio" (click)="scrollToDistance(0)">Portafolio</a>
+            <a routerLink="/contacto" (click)="scrollToDistance(0)">Contacto</a>
+          </div>
+        </div>
+
+      </div>
+      <hr>
+      <div class="footer-links-two">
+        <p>Simon Parra <span> </span><a href="https://simonparra.com/" class="link"> Diseñador web freelance</a></p>
+        <div class="footer-links-two-one">
+          <a routerLink="/aviso-legal" (click)="scrollToDistance(0)" rel="nofollow">Aviso legal</a>
+          <a routerLink="/politicas" (click)="scrollToDistance(0)" rel="nofollow">Política de privacidad</a>
+          <a routerLink="/politicas-cookies" (click)="scrollToDistance(0)" rel="nofollow">Política de Cookies</a>
+          <a href="/" title="Lista de paginas del sitio" rel="nofollow">Mapa Web</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</div>
